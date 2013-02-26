@@ -31,16 +31,14 @@ There are two kinds of methods:
 
 * those, which help to position child views in parent view
 
-<pre><code>
-// Centering subviews which moves every one of them by the same amount
+<pre><code>// Centering subviews which moves every one of them by the same amount
 [self.view centerSubviews:[NSArray arrayWithObjects:self.label, self.button, nil] 
                    inRect:CGRectMake(0, 0, 268, self.view.height)];
 </code></pre>
 
 or
 
-<pre><code>
-// Aligning views horizontally which positions them in one line preserving equal space between them
+<pre><code>// Aligning views horizontally which positions them in one line preserving equal space between them
 [self.view alignSubviewsHorizontally:[NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil] 
                                 type:AlignmentTypeEqualSpace];
 </code></pre>
