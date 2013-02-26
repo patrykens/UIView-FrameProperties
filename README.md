@@ -24,27 +24,25 @@ You can find basic accessors for UIView frame properties as well as methods for 
 There are two kinds of methods:
 * those, which help to position UIView instance (or any other subclass) in regards to other siblings
 
-<pre><code>
-    [self.label alignToTopWithMargin:20 centered:NO];
-    [self.label centerHorizontalyInRect:CGRectMake(0, 0, 268, self.view.height)];
-    [self.button placeBelowView:self.label withMargin:10 centered:YES];
+<pre><code>[self.label alignToTopWithMargin:20 centered:NO];
+[self.label centerHorizontalyInRect:CGRectMake(0, 0, 268, self.view.height)];
+[self.button placeBelowView:self.label withMargin:10 centered:YES];
 </code></pre>
 
 * those, which help to position child views in parent view
 
-
-// Centering subviews which moves every one of them by the same amount
 <pre><code>
-    [self.view centerSubviews:[NSArray arrayWithObjects:self.label, self.button, nil] 
-                       inRect:CGRectMake(0, 0, 268, self.view.height)];
+// Centering subviews which moves every one of them by the same amount
+[self.view centerSubviews:[NSArray arrayWithObjects:self.label, self.button, nil] 
+                   inRect:CGRectMake(0, 0, 268, self.view.height)];
 </code></pre>
 
 or
 
-// Aligning views horizontally which positions them in one line preserving equal space between them
 <pre><code>
-    [self.view alignSubviewsHorizontally:[NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil] 
-                                    type:AlignmentTypeEqualSpace];
+// Aligning views horizontally which positions them in one line preserving equal space between them
+[self.view alignSubviewsHorizontally:[NSArray arrayWithObjects:self.button1, self.button2, self.button3, nil] 
+                                type:AlignmentTypeEqualSpace];
 </code></pre>
 
 
