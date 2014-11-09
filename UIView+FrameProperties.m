@@ -5,6 +5,8 @@
 //  Copyright (c) 2012 Patryk Adamkiewicz. All rights reserved.
 //
 
+#import "UIView+FrameProperties.h"
+
 @implementation UIView (FrameProperties)
 
 #pragma mark - Frame properties
